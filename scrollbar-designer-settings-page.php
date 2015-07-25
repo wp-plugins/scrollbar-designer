@@ -252,7 +252,7 @@ function scrollbar_designer_settings_form(){?>
 <div class='wrap'>
 	<h1> <?php _e('Scrollbar Designer')?></h1>
 	<h3> <?php _e('Get rid of boring scrollbar and make your own Custom Scrollbar for your website.  ')?></h3>
-  <h3> <?php _e('My other plugin<a target="_blank" href="https://wordpress.org/plugins/login-page-styler">Login Page Styler</a> Recomended Plugin ')?></h3>
+  <h3> <?php _e('My other plugin<a target="_blank" href="https://wordpress.org/plugins/login-page-styler">Login Page Styler</a> Recommended Plugin ')?></h3>
 
 	<?php settings_errors(); ?>
        <form method="post" action="options.php" >
