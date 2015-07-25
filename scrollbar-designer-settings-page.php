@@ -293,7 +293,7 @@ function scrollbar_designer_settings_form(){?>
               <th scope="row"><?php _e('Scrollbar Cursor Width'); ?></th>
               <td><label for='st_sb_width'>
                   <input type='st_sb_width'  id='st_sb_width' name='st_sb_width' value='<?php echo get_option('st_sb_width') ;?> ' size='9'/>
-                  <p class="description"><?php _e( 'Insert Scrollbar width. Default is 5px'); ?></p>
+                  <p class="description"><?php _e( 'Insert Scrollbar width. Default is 8px'); ?></p>
                  </lable>
              </td>
             </tr>
@@ -378,9 +378,9 @@ function scrollbar_designer_settings_form(){?>
                 <td>
                  
                  <div class="radio-group">
-                      <input type="radio" name="st_rail_align_switch" id="dog1" required checked value='left' <?php checked('left',get_option('st_rail_align_switch')) ?> />
+                      <input type="radio" name="st_rail_align_switch" id="dog1"  value='left' <?php checked('left',get_option('st_rail_align_switch')) ?> />
                       <label for="dog1"><span>Left</span></label>
-                      <input type="radio" name="st_rail_align_switch" id="cat1" value='right' <?php checked('right',get_option('st_rail_align_switch')) ?> />
+                      <input type="radio" name="st_rail_align_switch" id="cat1" required checked value='right' <?php checked('right',get_option('st_rail_align_switch')) ?> />
                       <label for="cat1"><span>Right</span></label>
                       <div class="radio-switch"></div>
 
@@ -453,9 +453,9 @@ function scrollbar_designer_settings_form(){?>
                 <td>
                  
                  <div class="radio-group">
-                      <input type="radio" name="st_mouse_switch" id="dog4" required checked value='false' <?php checked('false',get_option('st_mouse_switch')) ?> />
+                      <input type="radio" name="st_mouse_switch" id="dog4"  value='false' <?php checked('false',get_option('st_mouse_switch')) ?> />
                       <label for="dog4"><span>No</span></label>
-                      <input type="radio" name="st_mouse_switch" id="cat4" value='true' <?php checked('true',get_option('st_mouse_switch')) ?> />
+                      <input type="radio" name="st_mouse_switch" id="cat4" required checked value='true' <?php checked('true',get_option('st_mouse_switch')) ?> />
                       <label for="cat4"><span>Yes</span></label>
                       <div class="radio-switch"></div>
 
@@ -473,7 +473,14 @@ function scrollbar_designer_settings_form(){?>
 
 </div>
 
-<div id="Must Try Plugin">
-  <div id="heading"> </div>
-</div>
-<?php } ?>
+
+<?php }
+
+function st_action_links( $links, $file ) {
+  if ( $file == plugin_basename( dirname(__FILE__).'/scrollbar-designer.php' ) ) {
+    $links[] = '<a href="' . get_bloginfo('url') . '/wp-admin/admin.php?page=st_option">Settings</a>';;
+  }
+  return $links;
+}
+add_filter('plugin_action_links','st_action_links' ,10,2);
+ ?>
