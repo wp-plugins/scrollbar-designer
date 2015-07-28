@@ -13,7 +13,7 @@ Get rid of boring scrollbar and make your own Custom Scrollbar for your website.
 Easy-to-use solution to have a custom scrollbars compatible with desktop,laptop, tablet and phone devices.
 
 Simple installation and activation, it works with NO modification of your code.
-Very stylish scrollbars, with no occupation on your window (original browser scrollbars need some of page space and reduces window/div usable width)
+Very stylish scrollbars, with no occupation on your window (original browser scrollbars need some of page space and reduces window/div usable width)</br>
 
 Facilities:
 
