@@ -7,7 +7,7 @@ Stable tag: 1.0
 License: GPLv2
 License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 
-Get rid of boring scrollbar and make your own Custom Scrollbar for your website.</br>
+Get rid of boring scrollbar and make your own Custom Scrollbar for your website.</br></br>
 
 == Description ==
 Easy-to-use solution to have a custom scrollbars compatible with desktop,laptop, tablet and phone devices.
